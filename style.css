@@ -1,0 +1,8 @@
+@font-face{
+    font-family: MetamorphousRegular;
+    src:url(Metamorphous.ttf);
+}
+h1{
+    font-family: MetamorphousRegular;
+    text-align: center;
+}
