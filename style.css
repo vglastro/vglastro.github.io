@@ -3,6 +3,44 @@
     src:url(Metamorphous.ttf);
 }
 h1{
-    font-family: MetamorphousRegular;
+    font-size: large;
     text-align: center;
+    font-family: MetamorphousRegular;
+}
+
+button{
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    font-family: MetamorphousRegular;
+    font-size: large;
+    border-style: none;
+    border-radius: 5px;
+    border-color: #FFFFFF;
+}
+
+button:hover{
+    border: #8789FF;
+    border-style: solid;
+}
+
+a:hover{
+    color: #8789FF;
+}
+
+a{
+    color: #8789FE;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #8789FE;
+}
+
+.landing{
+    background-color: #333455;
+}
+
+body{
+    background-color: #000000;
 }
