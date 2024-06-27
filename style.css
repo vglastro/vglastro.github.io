@@ -84,6 +84,7 @@ header {
 .hamburger {
     display: none;
     color: #9393AB;
+    vertical-align: middle;
 }
 
 .hamburger:hover {
