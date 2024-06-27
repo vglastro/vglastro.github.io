@@ -1,46 +1,144 @@
-@font-face{
+@font-face {
     font-family: MetamorphousRegular;
-    src:url(Metamorphous.ttf);
+    src: url(Metamorphous.ttf);
 }
-h1{
+
+h1 {
     font-size: large;
     text-align: center;
     font-family: MetamorphousRegular;
 }
 
-button{
+button {
+    color: #8789FF;
     font-weight: bold;
     text-align: center;
     padding: 10px;
     font-family: MetamorphousRegular;
     font-size: large;
-    border-style: none;
-    border-radius: 5px;
-    border-color: #FFFFFF;
-}
-
-button:hover{
-    border: #8789FF;
     border-style: solid;
+    border-radius: 5px;
+    border-color: #8789FF;
+    border-width: 3px;
+    background-color: #323354;
 }
 
-a:hover{
+button:hover {
     color: #8789FF;
+    border-color: #8789FF;
+    background-color: #FFFFFF;
 }
 
-a{
+a {
     color: #8789FE;
     text-decoration: none;
 }
 
-a:visited{
-    color: #8789FE;
+a:hover {
+    color: #FFFFFF;
 }
 
-.landing{
-    background-color: #333455;
+a:visited {
+    color: inherit;
 }
 
-body{
-    background-color: #000000;
+.landing {
+    background-color: #323354;
+    background-image: none;
+    align-content: center;
+}
+
+body {
+    background-color: #323354;
+    background-image: url(resources/background.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    vertical-align: middle;
+    margin: 2%;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 568px) {
+    .logo {
+        flex: 1;
+    }
+}
+
+/* Hamburger */
+.hamburger {
+    display: none;
+    color: #9393AB;
+}
+
+.hamburger:hover {
+    color: #8789FF;
+}
+
+@media screen and (max-width: 568px) {
+    .hamburger {
+        display: block;
+    }
+}
+
+/* Nav */
+@media screen and (max-width: 568px) {
+    .nav {
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.nav a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 35px 0 14px 40px;
+    font-family: "museo-slab", Verdana, Geneva, sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: #9393AB;
+}
+
+@media screen and (max-width: 568px) {
+    .nav a {
+        display: block;
+        text-align: center;
+        padding: 0 0 10px 0;
+    }
+}
+
+.nav a:hover {
+    color: #8789FF;
+}
+
+@media screen and (max-width: 568px) {
+    .nav a:hover {
+        padding: 0 0 10px 0;
+    }
+}
+
+.nav .active {
+    color: #8789FF;
+}
+
+/* show hide nav for mobile */
+.showHideNav {
+    display: block;
 }
